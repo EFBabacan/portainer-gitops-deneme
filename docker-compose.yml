@@ -1,0 +1,10 @@
+services:
+  web:
+    image: nginx:alpine
+    restart: unless-stopped
+    command:
+      - /bin/sh
+      - -c
+      - echo "<h1>Merhaba GitOps v1</h1>" > /usr/share/nginx/html/index.html && nginx -g 'daemon off;'
+    ports:
+      - "8091:80"
