@@ -2,7 +2,7 @@ pipeline {
   agent any
   environment {
     MESAJ = credentials('MESAJ')
-    SURUM = 'v1'
+    SURUM = 'v2'
   }
   stages {
     stage('Bilgi') {
